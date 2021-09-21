@@ -1,4 +1,4 @@
-# 💺
+# Hey I'm Bryce 💺
 
 Application Security Engineer @ [Blackstone](https://www.blackstone.com/)
 
