@@ -2,7 +2,7 @@
 
 Application Security Engineer @ [Blackstone](https://www.blackstone.com/)
 
-📍 Boston
+📍 NYC
 
 
 ## My favorite Projects
