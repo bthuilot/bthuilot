@@ -1,0 +1,228 @@
+%-------------------------
+% Resume in Latex
+% Author : Bryce Thuilot
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubheadingCollege}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1}, #2 & #3 \\
+      \textbf{#4} & \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    \textbf{\Huge \scshape Bryce Thuilot} \\ \vspace{1pt}
+    \small \href{mailto:bryce@thuilot.io}{\underline{bryce@thuilot.io}} $|$ 
+    \href{https://www.linkedin.com/in/bryce-thuilot-a75867153}{\underline{linkedin.com/bryce-thuilot}} $|$
+    \href{https://github.com/bthuilot}{\underline{github.com/bthuilot}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheadingCollege
+      {Northeastern University}{Boston, MA}{September 2017 - December 2021}
+      {College of Computer and Information Science}
+      {Bachelor of Science in Computer Science}{December 2021}
+          \resumeItemListStart
+            \resumeItem{GPA: 3.6}
+            \resumeItem{Dean's List}
+            \resumeItem{Relevant courses: Compilers, Systems Security, Object Oriented Design, Algorithms \& Data, Networks and Distributed Systems, Theory of Computation, Programming Languages}
+            
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Application Security Engineer}{January 2021 – Present}
+      {Blackstone}{New York, NY}
+      \resumeItemListStart
+        \resumeItem{Maintained deployment of AWS IAM roles and users using Terraform}
+        \resumeItem{Created automated CI/CD pipelines for SAST and SCA repository scanning}
+        \resumeItem{Assisted developers in AWS resource deployment}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Software Engineering Co-op}{January 2020 – June 2020}
+      {Poloniex}{Boston, MA}
+      \resumeItemListStart
+        \resumeItem{Worked on re-platforming older versions of the PHP site into new Go services such as matching and trade engine}
+        \resumeItem{Developed new trading and money management features for Java-based microservices such as the wallet service}
+        \resumeItem{Fixed bugs and allowed frontend PHP code to communicate with services.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Quantitative Developer Intern}{June 2019 – September 2019}
+      {ExodusPoint Captial}{New York, NY}
+      \resumeItemListStart
+        \resumeItem{Developed program to trade Equities in European markets using Python and Pandas}
+        \resumeItem{Gathered real time price data for securities using Bloomberg API}
+        \resumeItem{Automated deployment of various programs to production servers using Gitlab and AWS}
+      \resumeItemListEnd
+      
+     
+    \resumeSubHeadingListEnd
+
+%-----------COMMUNITY AND LEADERSHIP-----------
+\section{Community \& Leadership}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {WRBB Technical Director}{September 2019 – May 2020}
+      {Club/Organization 1}{Melbourne, VIC}
+      \resumeItemListStart
+        \resumeItem{Developed and Maintained an audio stream recorder and cataloger in Go}
+        \resumeItem{Oversaw training of new student DJs on radio equipment}
+        \resumeItem{Monitored for FCC violations by student DJs}
+      \resumeItemListEnd
+ \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Gameboy Emulator} $|$ \emph{Rust, SDL}}{Spring 2020}
+          \resumeItemListStart
+            \resumeItem{Created a Nintendo Gameboy emulator written in Rust}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Wiki Site Software} $|$ \emph{Ruby, Rails}}{Summer 2019}
+          \resumeItemListStart
+                     \resumeItem{A simple wiki software that allows for wiki page creation and organizing written using Ruby on Rails}
+  	         \resumeItem{Supports page markup using Github Markdown}
+         \resumeItemListEnd
+         
+
+    \resumeSubHeadingListEnd
+
+
+%
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Go, Python, Rust, Haskell, JavaScript, Ruby, Java} \\
+     \textbf{Frameworks/Libraries}{: AWS SDK, Docker, React, Rails, Pandas} \\
+     \textbf{Developer Tools}{: Emacs, Vim, Git, JetBrains, GNU/BSD Coreutils} \\
+     \textbf{Operating Systems}{: Mac OSX, GNU/Linux (Arch, Debian, Ubuntu, Alpine), Windows 10}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
