@@ -1,5 +1,5 @@
-application security @ [Blackstone](https://www.blackstone.com/)
-
 📍 NYC
 
-![](https://media.giphy.com/media/12bVDtXPOzYwda/giphy.gif)
+"Everyone can be taught to sculpt: Michelango would have had to be taught not to: So it is with great programmers"
+
+~ A. Perlis
